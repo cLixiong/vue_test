@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'clxIndex',
   data () {
     return {
-      msg: '这是HellowWorld组件'
+      msg: '这是clxIndex组件'
     }
   }
 }
@@ -17,18 +17,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
