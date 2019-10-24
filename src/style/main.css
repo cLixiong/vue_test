@@ -1,0 +1,109 @@
+/*初始化*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button,
+textarea,
+p,
+th,
+td,
+img,
+a {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    outline: none;
+    font-family: "Microsoft yahei";
+}
+
+img {
+    border: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #d1d1d1;
+}
+
+input::-moz-placeholder {
+    color: #d1d1d1;
+}
+
+input::-ms-input-placeholder {
+    color: #d1d1d1;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: #fff;
+}
+
+b,
+em,
+i {
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Microsoft yahei";
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #333;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+body {
+    background-color: #fff;
+}
