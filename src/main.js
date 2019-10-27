@@ -5,16 +5,19 @@ import App from './App'
 import router from './router'
 
 // 引入Mint-ui
-import { Header } from 'mint-ui';
+import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css'
-Vue.component(Header.name, Header);
+Vue.use(Mint);
 
 // 引入mui
 import './lib/mui/css/mui.css'
 import './lib/mui/css/iconsExtra.css'
 
-// 引入全局样式
+// 引入全局初始化样式
 import './style/main.css';
+
+// 引入animate动画
+import './lib/animate/css/animate.css';
 
 Vue.config.productionTip = false
 

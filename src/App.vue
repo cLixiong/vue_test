@@ -5,12 +5,15 @@
 
 
 	<!-- main -->
-    <router-view></router-view>
-
+	<transition>
+		<router-view></router-view>
+	</transition>
+    
+	
 
 	<!-- footer -->
     <nav class="mui-bar mui-bar-tab">
-		<router-link class="mui-tab-item mui-active" to="/">
+		<router-link class="mui-tab-item" to="/clxIndex">
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-tab-label">首页</span>
 		</router-link>
@@ -44,5 +47,19 @@ export default {
 <style>
  #app{
    padding-top: 40px;
+   /* 加 ↓ 作用：动画时候不出现滚动条 */
+   overflow-x: hidden;
+ }
+ .v-enter{
+	opacity: 0;
+ 	transform: translateX(100%)
+ }
+ .v-leave-to{
+	 opacity: 0;
+	transform: translateX(-100%);
+	position: absolute;
+ }
+ .v-enter-active,.v-leave-active{
+	transition: all 0.5s ease;
  }
 </style>

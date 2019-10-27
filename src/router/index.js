@@ -16,6 +16,9 @@ export default new Router({
     //  <router-view></router-view>
     routes: [{
         path: '/',
+        redirect: clxIndex
+    }, {
+        path: '/clxIndex',
         name: 'clxIndex',
         component: clxIndex
     }, {
@@ -30,5 +33,6 @@ export default new Router({
         path: '/clxBuycar',
         name: 'clxBuycar',
         component: clxBuycar
-    }, ]
+    }, ],
+    linkActiveClass: 'mui-active'
 })
