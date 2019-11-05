@@ -22,7 +22,7 @@ export default new Router({
         name: 'clxIndex',
         component: clxIndex
     }, {
-        path: '/clxSearch',
+        path: '/clxSearch/:id',
         name: 'clxSearch',
         component: clxSearch
     }, {

@@ -9,6 +9,19 @@ import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css'
 Vue.use(Mint);
 
+// 引入 axios
+
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
+
+// Vue.prototype.$axios = axios
+// 作用是我们每次发送的请求都会带一个/api的前缀
+axios.defaults.baseURL = '/api'
+
+// 阻止报错信息
+Vue.config.productionTip = false
+
 // 引入mui
 import './lib/mui/css/mui.css'
 import './lib/mui/css/iconsExtra.css'
